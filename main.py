@@ -28,7 +28,7 @@ for _ in range(slow_start):
     images.insert(0, images[0])
 for _ in range(slow_end):
     images.append(images[-1])
-    
+
 # Create GIF
 img, images = images[0], images[1:]
 im1 = Image.open(img)
